@@ -1,6 +1,6 @@
 @Library('hello-world-sharedlib') _
 
-def config = [name: 'Abhijeet', dayOfWeek: 'Friday']
+def config = [name: 'Abhijeet', dayOfWeek: 'Saturday']
 
 pipeline {
 
