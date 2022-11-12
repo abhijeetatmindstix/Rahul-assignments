@@ -17,7 +17,7 @@ pipeline {
 
                 script{
 
-                    welcome.checkout()
+                    task1.checkout()
 
                 }
 
@@ -31,7 +31,7 @@ pipeline {
 
                 script{
 
-                    welcome.build()
+                    task1.build()
 
                 }
 
