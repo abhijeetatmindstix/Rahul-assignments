@@ -1,4 +1,4 @@
-@Library("javahome-demo") _
+@Library("spring-demo") _
 pipeline {
 
     agent any
