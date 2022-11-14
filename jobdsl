@@ -5,7 +5,8 @@ folder('Project-A/A1') {
     description('Project-A => Folder for project A1')
 }
 
-************************************************************
+
+
 
 pipelineJob('Project-A/A1/jenkins-pipeline-job') {
   definition {
