@@ -1,0 +1,40 @@
+folder('Project-A') {
+    description('Folder for project A')
+}
+folder('Project-A/A1') {
+    description('Project-A => Folder for project A1')
+}
+
+************************************************************
+
+pipelineJob('Project-A/A1/jenkins-pipeline-job') {
+  definition {
+    cpsScmFlowDefinition {
+      scm {
+        gitSCM {
+          userRemoteConfigs {
+            userRemoteConfig {
+              credentialsId('')
+              name('')
+              refspec('')
+              url('https://github.com/abhijeetatmindstix/sharedlibs.git')
+            }
+          }
+          branches {
+            branchSpec {
+              name('*/assignment_no_3')
+            }
+          }
+          browser {
+            gitWeb {
+              repoUrl('')
+            }
+          }
+          gitTool('')
+        }
+      }
+      scriptPath('shared_library_assignment_3')
+      lightweight(true)
+    }
+  }
+}
